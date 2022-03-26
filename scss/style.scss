@@ -1,7 +1,79 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
 
 //Reset CSS
 * {
   box-sizing: border-box;
   margin: 0;
 }
+
+// Style Guide
+
+// - Mobile: 375px
+// - Desktop: 1440px
+
+// ## Typography
+
+// ### Body Copy
+
+// - Font size (paragraph): 15px
+
+$font-stack: "Outfit", sans-serif;
+ 
+// ## Colors
+
+$White: hsl(0, 0%, 100%);
+$Light-gray: hsl(212, 45%, 89%);
+$Grayish-blue: hsl(220, 15%, 55%);
+$Dark-blue: hsl(218, 44%, 22%);
+
+body {
+  background-color: $Light-gray;
+  font-family: $font-stack;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 370px;
+  background-color: $White;
+  margin: 3%;
+  padding: 3%;
+  border-radius: 3%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 100%;
+    border-radius: 3%;
+  }
+
+  h1 {
+    font-size: 22px;
+    font-weight: 700;
+    padding: 1rem 0 1rem 0;
+  }
+
+  p {
+    color: $Grayish-blue;
+  }
+}
+
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1rem;
+}
+.attribution {
+    font-size: 11px; text-align: center;
+    a { color: $Dark-blue; }
+}
+
